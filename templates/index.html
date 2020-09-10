@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Height Prediction </title>
+</head> 
+<body>
+	 
+   <h2>Human height prediction</h2>
+	<h3>Predict the height of the person when hand and feet lengths are given </h3><br>
+    <h4> Enter hand and foot lenths</h4>
+            
+    <form action='/predict' method="post">
+      <table>
+		<tr><td> Daily Self Study
+			<td>  <input  name="HLL"  placeholder="Daily Self Study (in hrs) " >
+        </tr>
+        <tr><td> Monthly time spent on Tutorials
+            <td>  <input  name="HLR" placeholder="Time on Tutorials (in hrs)" > 
+		</tr>
+		<tr><td> Daily Self Study
+			<td>  <input  name="HBL"  placeholder="Daily Self Study (in hrs) " >
+        </tr>
+		<tr><td> Daily Self Study
+			<td>  <input  name="HBR"  placeholder="Daily Self Study (in hrs) " >
+        </tr>
+		<tr><td> Daily Self Study
+			<td>  <input  name="FLL"  placeholder="Daily Self Study (in hrs) " >
+        </tr>
+		<tr><td> Daily Self Study
+			<td>  <input  name="FLR"  placeholder="Daily Self Study (in hrs) " >
+        </tr>
+        <tr><td> Daily Self Study
+			<td>  <input  name="FBL"  placeholder="Daily Self Study (in hrs) " >
+        </tr>
+        <tr><td> Daily Self Study
+			<td>  <input  name="FBR"  placeholder="Daily Self Study (in hrs) " >
+        </tr>          
+        <tr>
+		<td colspan=8 align=center><br><button type="submit">Predict Height</button>
+		</tr>
+	  </table>
+    </form>
+       
+     <br> {{pred}}<br>  
+
+  </body>
+</html>
